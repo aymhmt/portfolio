@@ -1,3 +1,4 @@
+
 *{
   background-color: #000;
   color: #fff;
@@ -12,12 +13,6 @@
 .app-container{
   display: grid;
   justify-content: center;
-}
-
-.Readme{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
 }
 
 .navbar-container {
@@ -78,42 +73,12 @@
   z-index: 0; 
 }
 
-.read-me{
-  height: 50vh;
-  background-color: #000;
-  margin: 50px 0 0 0;
-}
-
 .read-me img{
   border-radius: 50%;
   width: 100px;
 }
 
-.read-me p {
-  color: #fff;
-}
-
-.spotlight{
-  height: 50vh;
-  color: #fff;
-  background-color: #000;
-}
-
-.name{
-  font-size: 3rem;
-  color: #fff;
-  font-weight: 600;
-}
-
-.desc{
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 200;
-}
-
 .custom-box {
-  width: 350px;
-  height: 200px;
   border-radius: 30px;
   position: relative;
   cursor: pointer;
@@ -224,16 +189,12 @@
   gap: 10px;
 }
 
+
 .career{
-  background-color: none;
   color: #fff;
-  height: 100vh;
-  width: 100%;
 }
 
 .career-box{
-  width: 800px;
-  height: 200px;
   border: 1px outset #ffffff50;
   border-radius: 50px;
   margin-bottom: 25px;
@@ -251,6 +212,43 @@
 
 .info-two{
   margin: 20px;
+}
+
+
+/*
+
+.Readme{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.read-me{
+  height: 50vh;
+  background-color: #000;
+  margin: 50px 0 0 0;
+}
+
+.read-me p {
+  color: #fff;
+}
+
+.spotlight{
+  height: 50vh;
+  color: #fff;
+  background-color: #000;
+}
+
+.name{
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.desc{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 200;
 }
 
 .projects {
@@ -402,81 +400,19 @@
   background: none;
 }
 
-@media (max-width: 1142px) {
-  *{
-    max-width: 1142;
-    width: 100%;
+*/
+
+
+@media (max-width: 600px) {
+  .custom-box-container{
+    display: block;
   }
-  .read-me{
-    width: 100%;
-    display: grid;
-  }
+
   .light{
     display: none;
   }
-  .custom-box-container{
-    display: grid;
-    margin: -105px;
-  }
 
-  .career-box{
-    width: 380px;
-  }
-
-  .custom-box{
-    width: 350px;
-  }
-
-  .custom-content{
-    width: 350px;
-  }
-
-  .read-me{
-    height: 110vh;
-    width: 100px;
-  }
-
-  .spotlight{
-    height: 100vh;
-    width: 100px;
-
-  }
-
-  .changelog-container{
-    margin: 50px 0 0 60vh;
-    width: 350px;
-  }
-
-  .changelog-container p{
-    width: 350px;
-  }
-
-  .line-container{
-    width: 370px;
-  }
-
-  .changelog{
-    width: 380px;
-  }
-
-  .projects {
-    width: 380px;
-  }
-
-  .projects-container{
-    width: 380px;
-  }
-
-  .stack-container{
-    width: 370px;
-    margin: 50px;
-  }
-
-  .stack-content{
-    width: 350px;
-  }
-
-  .stack{
-    width: 330px;
+  .Readme{
+    margin: 70px 0;
   }
 }
