@@ -14,8 +14,9 @@ function Readme() {
     <div className="Readme">
       <div className="light"></div>
       <div className="read-me">
+        <img src="anime.png" alt="mami"/>
         <h1 className="name">Muhammet Ay</h1>
-        <h1 className="desc">Computer Engineer & Developer</h1>
+        <h1 className="desc">Computer Engineer & Ai Developer</h1>
         <p>Hi 👋🏻, I am currently working on developing my own projects to expand my portfolio
           <br />  and trying to adapt to the industry by using new technologies.
         </p>

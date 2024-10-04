@@ -1,5 +1,6 @@
 import React from "react";
-import { useNavigate} from "react-router-dom"; 
+import { useNavigate } from "react-router-dom"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../App.css";
 
 function Navbar() {
@@ -10,16 +11,22 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar-container">
-      <nav className="navbar">
-        <div className="option-container">
-          <span className="option-item" onClick={() => handleOptionClick('readme')}>Readme</span>
-          <span className="option-item" onClick={() => handleOptionClick('changelog')}>Changelog</span>
-          <span className="option-item" onClick={() => handleOptionClick('projects')}>Projects</span>
-          <span className="option-item" onClick={() => handleOptionClick('stack')}>Stack</span>
-        </div>
-      </nav>
-    </div>
+    <>
+      <div className="menu">
+        <FontAwesomeIcon icon="fa-solid fa-bars" />
+      </div>
+      
+      <div className="navbar-container">
+        <nav className="navbar">
+          <div className="option-container">
+            <span className="option-item" onClick={() => handleOptionClick('readme')}>Readme</span>
+            <span className="option-item" onClick={() => handleOptionClick('changelog')}>Changelog</span>
+            <span className="option-item" onClick={() => handleOptionClick('projects')}>Projects</span>
+            <span className="option-item" onClick={() => handleOptionClick('stack')}>Stack</span>
+          </div>
+        </nav>
+      </div>
+    </>
   );
 }
 

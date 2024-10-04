@@ -79,9 +79,14 @@
 }
 
 .read-me{
-  height: 40vh;
+  height: 50vh;
   background-color: #000;
-  margin: 50px 0 0 -200px;
+  margin: 50px 0 0 0;
+}
+
+.read-me img{
+  border-radius: 50%;
+  width: 100px;
 }
 
 .read-me p {
@@ -92,7 +97,6 @@
   height: 50vh;
   color: #fff;
   background-color: #000;
-  margin: 0 0 0 -90px;
 }
 
 .name{
@@ -110,7 +114,6 @@
 .custom-box {
   width: 350px;
   height: 200px;
-  background-color: none;
   border-radius: 30px;
   position: relative;
   cursor: pointer;
@@ -229,7 +232,7 @@
 }
 
 .career-box{
-  width: 880px;
+  width: 800px;
   height: 200px;
   border: 1px outset #ffffff50;
   border-radius: 50px;
@@ -346,13 +349,13 @@
 
 .stack {
   width: 880px;
-  height: auto; /* Allow height to adjust based on content */
-  border: 1px solid #fff; /* Changed to solid for better visibility */
-  border-radius: 20px; /* Slightly less rounded for a modern look */
-  background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-  padding: 20px; /* Added padding for spacing */
-  margin: 20px auto; /* Centered the stack */
+  height: auto;
+  border: 1px solid #fff; 
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  padding: 20px; 
+  margin: 20px auto;
 }
 
 .comp {
@@ -397,4 +400,83 @@
 
 .stack p{
   background: none;
+}
+
+@media (max-width: 1142px) {
+  *{
+    max-width: 1142;
+    width: 100%;
+  }
+  .read-me{
+    width: 100%;
+    display: grid;
+  }
+  .light{
+    display: none;
+  }
+  .custom-box-container{
+    display: grid;
+    margin: -105px;
+  }
+
+  .career-box{
+    width: 380px;
+  }
+
+  .custom-box{
+    width: 350px;
+  }
+
+  .custom-content{
+    width: 350px;
+  }
+
+  .read-me{
+    height: 110vh;
+    width: 100px;
+  }
+
+  .spotlight{
+    height: 100vh;
+    width: 100px;
+
+  }
+
+  .changelog-container{
+    margin: 50px 0 0 60vh;
+    width: 350px;
+  }
+
+  .changelog-container p{
+    width: 350px;
+  }
+
+  .line-container{
+    width: 370px;
+  }
+
+  .changelog{
+    width: 380px;
+  }
+
+  .projects {
+    width: 380px;
+  }
+
+  .projects-container{
+    width: 380px;
+  }
+
+  .stack-container{
+    width: 370px;
+    margin: 50px;
+  }
+
+  .stack-content{
+    width: 350px;
+  }
+
+  .stack{
+    width: 330px;
+  }
 }
