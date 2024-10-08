@@ -6,6 +6,7 @@ import Changelog from "./components/Changelog.jsx";
 import Projects from "./components/Projects.jsx"; 
 import Stack from "./components/Stack.jsx"; 
 import Navbar from "./components/Navbar.jsx"; 
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/stack" element={<Stack />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

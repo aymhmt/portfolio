@@ -7,23 +7,33 @@ function Readme() {
   };
 
   const handleLinkedinClick = () => {
-    window.open(`www.linkedin.com/in/muhammet-ay-067701274`, "_blank"); 
+    window.open(`https://www.linkedin.com/in/muhammet-ay-067701274`, "_blank"); 
   };
+
+  const careerData = [
+    {
+      location: "Karaman, Turkey",
+      date: "2022 - 2026",
+      title: "Computer Engineer Student",
+      description: "Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim."
+    },
+  ];
 
   return (
     <div className="Readme">
       <div className="light"></div>
       <div className="read-me">
-        <img src="anime.png" alt="mami"/>
+        <img src="anime.png" alt="mami" />
         <h1 className="name">Muhammet Ay</h1>
         <h1 className="desc">Computer Engineer & Ai Developer</h1>
-        <p>Hi 👋🏻, I am currently working on developing my own projects to expand my portfolio
-          <br />  and trying to adapt to the industry by using new technologies.
+        <p>
+          Hi 👋🏻, I am currently working on developing my own projects to expand my portfolio
+          <br /> and trying to adapt to the industry by using new technologies.
         </p>
-
-        <p>As a third-year computer engineering student who loves coding,
-          <br/>I have gained various experiences in web, mobile, and many other fields,
-          <br/>both big and small. I am a determined and ambitious developer who enjoys self-improvement.
+        <p>
+          As a third-year computer engineering student who loves coding,
+          <br />I have gained various experiences in web, mobile, and many other fields,
+          <br />both big and small. I am a determined and ambitious developer who enjoys self-improvement.
         </p>
       </div>
 
@@ -52,7 +62,7 @@ function Readme() {
               <h5>Linkedin</h5>
               <p>Kurumsal kimliğimin bulunduğu
                 <br />
-                linkedin sayfası.
+                LinkedIn sayfası.
               </p>
               <span className="visit-link">Ziyaret</span>
               <span className="arrow">&rarr;</span>
@@ -64,71 +74,26 @@ function Readme() {
           </div>
         </div>
       </div>
+
       <div className="career">
         <h1>Career</h1>
         <p>Overall I have 2+ years of experience in software development.</p>
-        <div className="career-box">
-          <div className="career-content">
-            <div className="info">
-              <p>Karaman, Turkey</p>
-              <p className="date">2022 - 2026</p>
-            </div>
-            <div className="info-two">
-              <h3>Computer Engineer Student</h3>
-              <p>Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim.</p>
-            </div>
-          </div>
-        </div>
-        <div className="career-box">
-          <div className="career-content">
-            <div className="info">
-              <p>Karaman, Turkey</p>
-              <p className="date">2022 - 2026</p>
-            </div>
-            <div className="info-two">
-              <h3>Computer Engineer Student</h3>
-              <p>Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim.</p>
+
+        {careerData.map((career, index) => (
+          <div className="career-box" key={index}>
+            <div className="career-content">
+              <div className="info">
+                <p>{career.location}</p>
+                <p className="date">{career.date}</p>
+              </div>
+              <div className="info-two">
+                <h3>{career.title}</h3>
+                <p>{career.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="career-box">
-          <div className="career-content">
-            <div className="info">
-              <p>Karaman, Turkey</p>
-              <p className="date">2022 - 2026</p>
-            </div>
-            <div className="info-two">
-              <h3>Computer Engineer Student</h3>
-              <p>Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim.</p>
-            </div>
-          </div>
-        </div>
-        <div className="career-box">
-          <div className="career-content">
-            <div className="info">
-              <p>Karaman, Turkey</p>
-              <p className="date">2022 - 2026</p>
-            </div>
-            <div className="info-two">
-              <h3>Computer Engineer Student</h3>
-              <p>Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim.</p>
-            </div>
-          </div>
-        </div>
-        <div className="career-box">
-          <div className="career-content">
-            <div className="info">
-              <p>Karaman, Turkey</p>
-              <p className="date">2022 - 2026</p>
-            </div>
-            <div className="info-two">
-              <h3>Computer Engineer Student</h3>
-              <p>Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim.</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-      
     </div>
   );
 }

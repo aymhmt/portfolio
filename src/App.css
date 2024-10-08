@@ -1,7 +1,17 @@
-
-*{
-  background-color: #000;
+body{
+  background-color: #000000;
   color: #fff;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+
+body.light-mode{
+    background: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .App {
@@ -52,7 +62,6 @@
 
 .option-item {
   font-size: clamp(10px,10vw,50px);
-  color: #fff;
   font-size: 15px;
   font-weight: 400;
   margin: 0 10px;
@@ -88,8 +97,7 @@
   align-items: center;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  color: white;
+  padding: 20px 10px;
   border: 1px outset #ffffff50;
 }
 
@@ -97,23 +105,24 @@
 .custom-content {
   text-align: left;
   width: 100%;
+  z-index: 2;
+  padding: 20px 40px;
 }
 
 .custom-content h5 {
   font-size: 1.5em;
   margin: 0;
-  color: #fff;
+  z-index: 2;
 }
 
 .custom-content p {
   font-size: 1em;
-  color: #bbb;
   margin-top: 10px;
+  z-index: 1000;
 }
 
 .custom-content .visit-link {
   font-weight: bold;
-  color: #fff;
   margin-top: 10px;
   display: inline-block;
   transform: translateY(80px);
@@ -124,8 +133,8 @@
   right: 20px;
   bottom: 15px;
   font-size: 24px;
-  color: #ffffff;
   transform: translateX(100px) rotate(-45deg);
+  z-index: 1000;
 }
 
 .hover-windows {
@@ -152,13 +161,12 @@
 }
 
 .one{
-  background-color: #ffffff28;
+  background-color: #cec1c131;
 }
 
 .two{
   left: -350px;
-  z-index: 1;
-  background-color: #ffffff40;
+  background-color: #877f7f25;
 
 }
 
@@ -189,11 +197,6 @@
   gap: 10px;
 }
 
-
-.career{
-  color: #fff;
-}
-
 .career-box{
   border: 1px outset #ffffff50;
   border-radius: 50px;
@@ -219,7 +222,6 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  color: #fff;
   margin: 50px;
 }
 
@@ -279,13 +281,11 @@
 .line-container {
   display: grid;
   align-items: center; 
-  color: #fff;
 }
 
 .vertical-line {
   width: 1px; 
   height: 100px; 
-  background-color: #fff; 
   margin: 0 10px; 
 }
 
@@ -302,9 +302,34 @@
   margin: 50px 0 0 0;
 }
 
+.theme{
+  width: 40px;
+  height: 20px;
+  background: none;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  border: 1px outset #fff;
+  border-radius: 20px;
+  transition: transform 0.3s ease; 
+}
+
+.theme:hover{
+  transform: scale(1.1);
+}
+
+.icon{
+  font-size: 15px;
+  align-items: center;
+  margin: 5px;
+}
+
+.move-icon {
+  justify-content: end;
+}
+
 
 /*
-
 .Readme{
   display: flex;
   flex-direction: column;

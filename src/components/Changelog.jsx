@@ -1,55 +1,34 @@
-import React from "react"
+import React from "react";
 import "../App.css";
 
-function Changelog(){
-    return(
+function Changelog() {
+    const events = [
+        { emoji: "🚀", title: "Visit to Karaman - University", year: "2022-2026" },
+        { emoji: "🚀", title: "Visit to Kahramanmaraş - Dersane", year: "2021-2022" },
+        { emoji: "🚀", title: "Visit to Kahramanmaraş - Lise", year: "2017-2021" },
+        { emoji: "🚀", title: "Visit to Kahramanmaraş - Ortaokul", year: "2013-2017" },
+        { emoji: "🚀", title: "Visit to Kahramanmaraş - İlkokul", year: "2009-2013" },
+    ];
+
+    return (
         <div className="changelog-container">
             <div className="light"></div>
             <div className="changelog">
                 <h1>Changelog</h1>
                 <p>Here you can find the major updates and changes to my life.</p>
-                <div className="line-container">
-                    <div className="title-container">
-                    <div className="emoji">🚀</div>
-                        <p>Visit to Karaman - University</p>
-                        <p>2022-2026</p>
+                {events.map((event, index) => (
+                    <div className="line-container" key={index}>
+                        <div className="title-container">
+                            <div className="emoji">{event.emoji}</div>
+                            <p>{event.title}</p>
+                            <p>{event.year}</p>
+                        </div>
+                        {index !== events.length - 1 && <div className="vertical-line"></div>}
                     </div>
-                    <div className="vertical-line"></div>
-                </div>
-                <div className="line-container">
-                    <div className="title-container">
-                    <div className="emoji">🚀</div>
-                        <p>Visit to Kahramanmaraş - Dersane</p>
-                        <p>2021-2022</p>
-                    </div>
-                    <div className="vertical-line"></div>
-                </div>
-                <div className="line-container">
-                    <div className="title-container">
-                    <div className="emoji">🚀</div>
-                        <p>Visit to Kahramanmaraş - Lise</p>
-                        <p>2017-2021</p>
-                    </div>
-                    <div className="vertical-line"></div>
-                </div>
-                <div className="line-container">
-                    <div className="title-container">
-                    <div className="emoji">🚀</div>
-                        <p>Visit to Kahramanmaraş - Ortaokul</p>
-                        <p>2013-2017</p>
-                    </div>
-                    <div className="vertical-line"></div>
-                </div>
-                <div className="line-container">
-                    <div className="title-container">
-                    <div className="emoji">🚀</div>
-                        <p>Visit to Kahramanmaraş - İlkokul</p>
-                        <p>2009-2013</p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );
 }
 
-export default Changelog
+export default Changelog;
