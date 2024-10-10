@@ -10,10 +10,6 @@ function Navbar() {
 
   const [isDarkMode, setIsDarkMode] = useState(true);
 
-  const openNav = () => {
-    return true;
-  }
-
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
 
