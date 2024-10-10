@@ -4,32 +4,14 @@ import "../App.css";
 function Projects() {
   const projects = [
     {
-      title: "Music App",
-      description: "Kullanıcıların trend olan şarkı & podcast dinlemesini sağlayan web app.",
+      title: "Spotify App",
+      description: "Kullanıcıların trend olan şarkı & podcast dinlemesini sağlayan web arayüz tasarımı.",
       webUrl: "https://spotify-app-ochre-two.vercel.app",
       repoUrl: "https://github.com/aymhmt/spotifyApp"
     },
     {
-      title: "Yolyardım App",
-      description: "Yolda kalan araçlar için yol yardım çağırmasını sağlayan bir webapp.",
-      webUrl: "#",
-      repoUrl: "#"
-    },
-    {
-      title: "Dancer App",
-      description: "Dansöz kiralamanızı sağlayan bir web & mobil app.",
-      webUrl: "#",
-      repoUrl: "#"
-    },
-    {
-      title: "Code App",
-      description: "Parfümlerin muadillerinin kodlarını içeren web site.",
-      webUrl: "#",
-      repoUrl: "#"
-    },
-    {
-      title: "Psikolog Ai",
-      description: "Ai tabanlı bir psikolog web site.",
+      title: "Netflix App",
+      description: "Netflix benzeri UI tasarımı olan web arayüzü.",
       webUrl: "#",
       repoUrl: "#"
     }
@@ -40,10 +22,9 @@ function Projects() {
   };
 
   return (
-    <>
-      <div className="projects">
+      <div className="projects-container">
         <div className="light"></div>
-        <div className="projects-container">
+        <div className="projects">
           <h1>Projects</h1>
           <p>
             I've worked on a range of projects over the years—some as hobbies,
@@ -55,12 +36,8 @@ function Projects() {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="link-container">
-                <div className="extra">
-                  <span>Stars</span>
-                  <span>Forks</span>
-                </div>
                 <div className="link">
-                  <button onClick={() => openLink(project.webUrl)}>Web Site</button>
+                  <button onClick={() => openLink(project.webUrl)}>Web</button>
                   <button onClick={() => openLink(project.repoUrl)}>GitHub</button>
                 </div>
               </div>
@@ -68,7 +45,6 @@ function Projects() {
           ))}
         </div>
       </div>
-    </>
   );
 }
 

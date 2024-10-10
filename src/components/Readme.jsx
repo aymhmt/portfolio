@@ -15,7 +15,7 @@ function Readme() {
       location: "Karaman, Turkey",
       date: "2022 - 2026",
       title: "Computer Engineer Student",
-      description: "Şuan da Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim."
+      description: "Kmu' de bilgisayar mühendisliği bölümü 3. sınıf öğrencisiyim."
     },
   ];
 
@@ -76,7 +76,7 @@ function Readme() {
       </div>
 
       <div className="career">
-        <h1>Career</h1>
+        <h1>Now</h1>
         <p>Overall I have 2+ years of experience in software development.</p>
 
         {careerData.map((career, index) => (
