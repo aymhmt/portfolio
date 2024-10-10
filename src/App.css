@@ -6,14 +6,13 @@ body{
 }
 
 body.dark-mode {
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  background-color: #000;
+  color: #fff;
 }
-
 
 body.light-mode{
     background: #fff;
-    color: rgb(0, 0, 0);
+    color: #000;
 }
 
 .App {
@@ -78,9 +77,9 @@ body.light-mode{
   transform: translateX(-50%); 
   width: 1000px; 
   height: 100vh; 
-  background: radial-gradient(circle, rgba(8, 162, 28, 0.7) 0%, rgba(255, 255, 255, 0) 70%); 
+  background: radial-gradient(circle, rgba(70, 184, 240, 0.7) 0%, rgba(255, 255, 255, 0) 70%); 
   box-shadow: none; 
-  z-index: 0; 
+  z-index: -1; 
 }
 
 .read-me img{
@@ -164,12 +163,12 @@ body.light-mode{
 }
 
 .one{
-  background-color: #cec1c131;
+  background-color: rgba(209, 234, 245, 0.3);
 }
 
 .two{
   left: -350px;
-  background-color: #877f7f25;
+  background-color: rgb(192, 230, 249, 0.3);
 
 }
 
@@ -197,6 +196,7 @@ body.light-mode{
 
 .custom-box-container{
   display: flex;
+  gap: 10px;
 }
 
 .career-box{
@@ -299,13 +299,10 @@ body.light-mode{
 }
 
 .theme{
-  width: 40px;
-  height: 20px;
-  background: none;
   display: flex;
   align-items: center;
   margin: 0 20px;
-  border: 1px outset #fff;
+
   border-radius: 20px;
   transition: transform 0.3s ease; 
 }
@@ -322,14 +319,6 @@ body.light-mode{
 
 .move-icon {
   justify-content: end;
-}
-
-.spotlight{
-  margin: 0 25px;
-}
-
-.career{
-  margin: 0 25px;
 }
 
 .footer{
@@ -363,15 +352,16 @@ body.light-mode{
 }
 
 .social a {
-  color: #fff;
+  color: inherit;
+  text-decoration: none;
   font-size: 1.5rem;
   margin: 0 20px;
 }
 
 .social a:hover{
   transform: scale(1.1);
+  color: rgba(70, 184, 240, 1);
 }
-
 
 @media (max-width: 600px) {
   .read-me,
@@ -391,7 +381,10 @@ body.light-mode{
     display: none;
   }
 
-  .theme{
-    display: none;
+
+  .career,
+  .spotlight{
+    margin: 0 25px;
   }
+
 }

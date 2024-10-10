@@ -1,16 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useState} from "react";
 import { useNavigate } from "react-router-dom"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon } from "@fortawesome/free-regular-svg-icons";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon as solidMoon } from "@fortawesome/free-solid-svg-icons";
+import { faSun as solidSunBright } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
 
 function Navbar() {
   const navigate = useNavigate();
-  const iconRef = useRef(null); 
 
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [isIconMoved, setIsIconMoved] = useState(false); 
+
+  const openNav = () => {
+    return true;
+  }
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
@@ -21,17 +23,6 @@ function Navbar() {
     } else {
       document.body.classList.add("dark-mode");
       document.body.classList.remove("light-mode");
-    }
-
-    if (iconRef.current) {
-      if (!isIconMoved) {
-        iconRef.current.classList.add("move-icon");
-        setIsIconMoved(true); 
-      } else {
-
-        iconRef.current.classList.remove("move-icon");
-        setIsIconMoved(false); 
-      }
     }
   };
 
@@ -50,9 +41,9 @@ function Navbar() {
             <span className="option-item" onClick={() => handleOptionClick('stack')}>Stack</span>
           </div>
         </nav>
-        <div className="theme" ref={iconRef}>
+        <div className="theme">
           <FontAwesomeIcon 
-            icon={isDarkMode ? faSun : faMoon}
+            icon={isDarkMode ? solidSunBright : solidMoon}
             onClick={toggleTheme}
             className="icon"
           />
