@@ -82,9 +82,17 @@ body.light-mode{
   z-index: -1; 
 }
 
+.read-me{
+  margin: 60px 0;
+}
+
 .read-me img{
   border-radius: 50%;
-  width: 100px;
+  width: 70px;
+}
+
+.read-me span{
+  color: rgba(70, 184, 240, 1);
 }
 
 .custom-box {
