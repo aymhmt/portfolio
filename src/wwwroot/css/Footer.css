@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+  }
+  
+  .footer-line{
+    display: flex;
+    height: 1px;
+    background: linear-gradient(to right, transparent 0%,
+    var(--main-color) 50%, transparent 100%);
+  }
+  
+  .footer-span {
+    display: flex;
+    align-items: center; 
+    justify-content: end;
+    font-size: 10px;
+  }
+ 
+

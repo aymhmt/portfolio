@@ -1,0 +1,47 @@
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    margin: 25px 0;
+    background: none;
+  }
+  
+  .navbar {
+    max-width: 550px;
+    min-width: 330px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff50;
+    border-radius: 30px;
+    background: var(--text-color-light);
+    margin: 0 20%  0 25%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); 
+  }
+  
+  .option-container {
+    display: flex;
+    align-items: center;
+    background: none;
+  }
+  
+  .option-item {
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 10px;
+    cursor: pointer;
+    background: none;
+    transition: outline 0.3s, background-color 0.3s;
+    height: 36px;
+    align-items: center;
+  }
+  
+  .option-item.active {
+    box-shadow: inset 0px -2px 0px var(--main-color);
+    color: var(--system-color);
+  }

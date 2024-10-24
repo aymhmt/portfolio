@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --text-color-light: #2e2d35;
+  --text-color-dark: #d7d3d3;
+  --main-color: rgb(89, 95, 218);
+  --system-color:#fff;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body.dark-mode {
+    background: var(--primary-color);
+    color: var(--text-color-dark);
+}
+
+body.light-mode{
+    background: var(--secondary-color);
+    color: var(--text-color-light);
+}
+
+body.light-mode .navbar {
+  background: rgba(255, 255, 255, 0.3); 
+  color: var(--text-color-light);
+}
+
+body.dark-mode .navbar {
+  background: rgba(30, 30, 30, 0.3); 
+  color: var(--text-color-dark);
+}
+
+body.light-mode .option-item.active {
+  box-shadow: inset 0px -2px 0px var(--main-color);
+  color: #000;
+}
+
+body.dark-mode .option-item.active {
+  box-shadow: inset 0px -2px 0px var(--main-color);
+  color: #fff;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+}
+
+.app-container {
+  display: grid;
+  width: 50%;
+  max-width: 700px;
+  margin: 0 30%;
+  position: relative; 
+  z-index: 0;
+}
+
+.name{
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 2rem;
+  font-weight: 400;
+  margin: -20px 0 0 0;
+  color: var(--text-color);
+}
+
+.light {
+  position: fixed; 
+  top: -120vh;
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 150vh; 
+  height: 150vh; 
+  background: radial-gradient(circle, rgb(89, 95, 218) -30%, rgba(255, 255, 255, 0) 70%); 
+  box-shadow: none; 
+  z-index: -1; 
+}
+
+.read-me{
+  margin: 30px 0;
+}
+
+.read-me img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.logo{
+  font-size: 40px;
+}
+
+.custom-box-container{
+  display: flex;
+  gap: 15px;
+}
+
+.custom-box {
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(50px); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-width 0.3s ease;
+  padding: 5px 10px;
+  border: 2px solid #4d4b4b;
+  margin-bottom: 20px;
+  width: 50%;
+  max-width: 400px;
+  height: 180px;
+}
+
+.custom-content {
+  text-align: left;
+  width: 100%;
+  z-index: 2;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(20px);
+}
+
+.custom-content h5 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0;
+  z-index: 2;
+}
+
+.custom-content p {
+  font-size: 1em;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.visit-link {
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  transform: translateY(50px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrow{
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  font-size: 24px;
+  transform: translateX(100px) rotate(-45deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  background: none;
+}
+
+.hover-windows {
+  position: absolute;
+  top: -20%;
+  right: -700px;
+  display: flex;
+  justify-content: end;
+  width: 800px;
+  height: 250px;
+  display: flex;
+  z-index: 1;
+}
+
+.small-window{
+  position: relative;
+  width: 400px;
+  height: 600px;
+  transform: translateX(100px);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.one{
+  background-color: rgba(150, 150, 150, 0.1);
+}
+
+.two{
+  left: -350px;
+  background-color: rgb(200, 200, 200, 0.1);
+}
+
+.custom-box:hover{
+  
+  .custom-content{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .visit-link{
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: translateY(-10px);
+  }
+
+  .arrow{
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    transform: translateX(0) rotate(-45deg);
+  }
+
+  .one{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateX(-20px);
+  }
+
+  .two{
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: translateX(-40px);
+  }
+}
+
+.career-box{
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.career-content{
+  margin: 20px;
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.info-two{
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.icon-image {
+  width: 18px;
+  display: flex; 
+}
+
+.theme{
+  margin: 0 4px;
+}
+
+.sun{
+  margin: 0 -4px;
+}
+
+.moon{
+  margin: 0 12px;
+}
+
+.icon-button {
+  display: flex;
+  width: 40px;
+  height: 24px;
+  border-radius: 50px;
+  border: 1px solid #454242;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); 
+  cursor: pointer;
+  background: none;
+}
+
+.projects-box{
+  border: 2px solid #393737;
+  border-radius: 20px;
+  height: 200px;
+  margin-bottom: 10px;
+} 
+
+.link{
+  display: flex;
+  gap: 5%;
+  text-align: center;
+  margin: 0 40px;
+}
+
+.link-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-box h3{
+  background: none;
+  margin: 40px 40px 20px;
+}
+
+.projects-box p {
+  background: none;
+  margin: 0 60px 20px;
+}
+
+.title-container{
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.line-container {
+  display: grid;
+  align-items: center; 
+}
+
+.vertical-line {
+  width: 1px; 
+  height: 100px; 
+  margin: 0 10px; 
+}
+
+.theme{
+  justify-content: center;
+}
+
+.moon{
+  justify-content: end;
+}
+
+@media (max-width: 600px) {
+  .app-container{
+    display: grid;
+    width: 90%;
+    margin: 0;
+  }
+
+  .navbar {
+    margin: 0;
+  }
+
+  .custom-box-container{
+    display: grid;
+    gap: 15px;
+  }
+
+  .custom-box{
+    width: 90%;
+  }
+}
+
+li{
+  list-style: none;
+}
+
+.section{
+  display: flex;
+  gap: 30px;
+  margin: 0 -40px;
+}
+
+.stack-content{
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+
+.stack{
+  border-radius: 20px;
+  border: 1px solid var(
+    --primary-color
+  );
+}
+
+.stack img{
+  border-radius: 20px;
+  width: 100%;
+}
