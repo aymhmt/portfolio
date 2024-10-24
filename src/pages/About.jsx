@@ -16,7 +16,7 @@ function About() {
     return (
         <div className="about-container">
             <div className="light"></div>
-            <div className="header">
+            <div className="about">
                 <h1>About Me</h1>
                 <p>Hi! I'm Muhammet, a passionate developer focusing on mobile and web technologies.</p>
             </div>
