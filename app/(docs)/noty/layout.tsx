@@ -1,4 +1,3 @@
-import CarbonAds from "@/components/blocks/docs/carbon-ads";
 import { Avatar } from "@/components/blocks/header";
 import { ThemeToggle } from "@/components/blocks/theme-toggle";
 import { buttonVariants } from "@/components/ui/button";
@@ -39,8 +38,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 	},
 	verification: {
-		// google: '',
-		// yandex: '',
+
 	},
 };
 
@@ -60,11 +58,6 @@ const sponsors = [
 		imageSrc: "boostmmr.jpg",
 		alt: "",
 	},
-	// {
-	//   url: "https://goread.io/buy-instagram-followers",
-	//   imageSrc: "Favicongoread.png",
-	//   alt: "Buy Instagram Followers",
-	// },
 	{
 		url: "https://nettikasinot.org",
 		imageSrc: "nettikasino.png",
@@ -76,11 +69,6 @@ const sponsors = [
 		imageSrc: "casinoshunter-dark.png",
 		alt: "Casinos Hunter",
 	},
-	// {
-	//   url: "https://reddogcasino.com/en/games/blackjack",
-	//   imageSrc: "Red-Dog-Casino-Logo.png",
-	//   alt: "RedDogCasino",
-	// },
 	{
 		url: "https://slotsempire.com",
 		imageSrc: "slots-empire.svg",
@@ -148,8 +136,6 @@ export default function RootLayout({
 							Become a Patron
 						</Link>
 					</p>
-
-					<CarbonAds className="mt-4" />
 
 					<div>
 						<h2 className="text-xl font-semibold mt-2 mb-2">Sponsors</h2>
