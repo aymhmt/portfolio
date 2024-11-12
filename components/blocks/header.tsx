@@ -105,8 +105,8 @@ function MobileNavigation(
 										{item.label}
 									</MobileNavItem>
 								))}
-								<MobileNavItem key="colophon" href="/colophon">
-									Colophon
+								<MobileNavItem key="contact" href="mailto:aymuhammett@icloud.com?subject=Contact%20Us&body=Hello%2C%20I%20would%20like%20to%20reach%20out%20to%20you.">
+									Contact
 								</MobileNavItem>
 							</ul>
 						</nav>
