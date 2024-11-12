@@ -36,8 +36,8 @@ export function Footer() {
 									{item.label}
 								</NavLink>
 							))}
-							<NavLink key={"/colophon"} href="/colophon">
-								Colophon
+							<NavLink href="mailto:aymuhammett@icloud.com?subject=Contact%20Us&body=Hello%2C%20I%20would%20like%20to%20reach%20out%20to%20you.">
+								Contact
 							</NavLink>
 						</div>
 						<div className="text-sm text-muted-foreground">

@@ -94,6 +94,10 @@ const changelogItems: Array<{
 				src: "/img/desktop_two.jpg",
 				variant: "4x5",
 			},
+			{
+				src: "/img/school.JPG",
+				variant: "4x5",
+			},
 		],
 	},
 	{
@@ -139,6 +143,77 @@ export const projects = [
 				icon: IconGithub,
 			},
 		],
+		metrics: [],
+		featured: true,
+	},
+
+	{
+		name: "Match App",
+		githubSlug: "aymhmt/portfolio",
+		released: "2024-11-11",
+		description: "Match application.",
+		links: [
+			{
+				href: "https://aymuhammet.com.tr",
+				label: "Website",
+				icon: IconWorld,
+			},
+			{
+				href: "https://github.com/aymhmt/portfolio",
+				label: "GitHub",
+				icon: IconGithub,
+			},
+		],
+		metrics: [],
+		featured: true,
+	},
+
+	{
+		name: "Ai App",
+		githubSlug: "aymhmt/portfolio",
+		released: "2024-11-11",
+		description: "Ai Application.",
+		links: [
+			{
+				href: "https://aymuhammet.com.tr",
+				label: "Website",
+				icon: IconWorld,
+			},
+			{
+				href: "https://github.com/aymhmt/portfolio",
+				label: "GitHub",
+				icon: IconGithub,
+			},
+		],
+		metrics: [],
+		featured: true,
+	},
+];
+
+export const certificate = [
+	{
+		title: "BTK Akademi React Web Programlama",
+		description: "Eğlenceli bir programdı. React, redux vb. şeyler öğrendik.",
+		recipientName: "Muhammet Ay",
+		filePath: "https://google.com",
+		metrics: [],
+		featured: true,
+	},
+
+	{
+		title: "BTK Akademi A2 English",
+		description: "A2 seviye eğitimini bitirerek ingilizce temelimi sağlam şekilde atmış ve bu sertifikayı almaya hak kazanmışımdır.",
+		recipientName: "Muhammet Ay",
+		filePath: "https://google.com",
+		metrics: [],
+		featured: true,
+	},
+
+	{
+		title: "Turkcell Asp.net Core MVC Eğitimi",
+		description: "Eğitimleri tamamlayarak asp.net core mvc sertifikasını almaya hak kazanmışımdır.",
+		recipientName: "Muhammet Ay",
+		filePath: "https://google.com",
 		metrics: [],
 		featured: true,
 	},

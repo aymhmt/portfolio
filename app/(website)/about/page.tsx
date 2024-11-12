@@ -1,5 +1,6 @@
 "use client";
-
+import { CertificateCard } from "@/components/blocks/certificate-card";
+import { certificate } from "@/lib/utils";
 import { Container } from "@/components/blocks/container";
 
 export default function About() {
@@ -12,7 +13,19 @@ export default function About() {
 						Here you can find the major updates and changes to my life.
 					</p>
 				</div>
+				<div className="grid grid-cols-1 gap-4 max-h-md"> 
+					{certificate.map((cert, index) => (
+						<CertificateCard
+							key={index}
+							title={cert.title}
+							description={cert.description}
+							recipientName={cert.recipientName}
+							filePath={cert.filePath}
+						/>
+					))}
+				</div>
 			</div>
 		</Container>
 	);
 }
+

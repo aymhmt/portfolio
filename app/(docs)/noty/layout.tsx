@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	metadataBase: new URL("https://aymuhammet.com.tr"),
 	title: {
 		default: "Muhammet Ay",
-		template: "%s | Muhammet Ay",
+		template: "%s | Computer Engineer",
 	},
 	description: "Developer, Computer Engineer",
 	openGraph: {
