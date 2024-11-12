@@ -38,7 +38,6 @@ export default async function Home() {
 							<p className="my-3 pr-0 sm:pr-14 text-muted-foreground">
 								{project.description}
 							</p>
-							{/* <div className="mt-2 gap-2 flex"></div> */}
 							<div className="-mx-3 -mb-3 -mt-1 flex flex-col sm:flex-row gap-4 sm:gap-0 items-start sm:items-center justify-between p-3">
 								<div className="flex gap-2">
 									{project.metrics.map((metric, index) => (

@@ -58,8 +58,8 @@ const changelogItems: Array<{
 }> = [
 	{
 		date: "2023-07-04",
-		event: "Turkey",
-		title: "ME",
+		event: "A few photos of mine.",
+		title: "Me",
 		dateFormatOptions: dateFormat.day,
 		photos: [
 			{
@@ -82,7 +82,7 @@ const changelogItems: Array<{
 	},
 	{
 		date: "2023-04-21",
-		event: "Turkey",
+		event: "The tools I own.",
 		title: "Desk",
 		dateFormatOptions: dateFormat.day,
 		photos: [
@@ -102,7 +102,7 @@ const changelogItems: Array<{
 	},
 	{
 		date: "2022-07-08",
-		event: "Turkey",
+		event: "Fun moments of my life.",
 		title: "Enjoy",
 		photos: [
 			{
@@ -192,28 +192,28 @@ export const projects = [
 
 export const certificate = [
 	{
-		title: "BTK Akademi React Web Programlama",
-		description: "Eğlenceli bir programdı. React, redux vb. şeyler öğrendik.",
+		title: "BTK Akademi React",
+		description: "I have reached the end of another enjoyable program. By learning React and Redux, I have earned the right to receive this certificate.",
 		recipientName: "Muhammet Ay",
-		filePath: "https://google.com",
+		filePath: "https://drive.google.com/file/d/1IYhTrsynCHA6WKuih6POPfmXDV5ThpGW/view?usp=sharing",
+		metrics: [],
+		featured: true,
+	},
+
+	{
+		title: "Turkcell Asp.net Core MVC",
+		description: "I have completed the courses and earned the right to receive the ASP.NET Core MVC certificate.",
+		recipientName: "Muhammet Ay",
+		filePath: "https://drive.google.com/file/d/1ugHN-YklalRgTvLRuqdM6QTVXvYuvmpn/view?usp=sharing",
 		metrics: [],
 		featured: true,
 	},
 
 	{
 		title: "BTK Akademi A2 English",
-		description: "A2 seviye eğitimini bitirerek ingilizce temelimi sağlam şekilde atmış ve bu sertifikayı almaya hak kazanmışımdır.",
+		description: "I have completed the A2 level course, built a strong foundation in English, and earned the right to receive this certificate",
 		recipientName: "Muhammet Ay",
-		filePath: "https://google.com",
-		metrics: [],
-		featured: true,
-	},
-
-	{
-		title: "Turkcell Asp.net Core MVC Eğitimi",
-		description: "Eğitimleri tamamlayarak asp.net core mvc sertifikasını almaya hak kazanmışımdır.",
-		recipientName: "Muhammet Ay",
-		filePath: "https://google.com",
+		filePath: "https://drive.google.com/file/d/1iR-vzU0Gz-xQkd1E6WV07d7j8VOtEi9W/view?usp=sharing",
 		metrics: [],
 		featured: true,
 	},
