@@ -5,17 +5,17 @@ import { Header } from "@/components/blocks/header";
 import { HeaderGradient } from "@/components/blocks/header-gradient";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://ned.im"),
+	metadataBase: new URL("https://aymuhammet.com.tr"),
 	title: {
-		default: "Nedim Arabacı",
-		template: "%s | Nedim Arabacı",
+		default: "Muhammet Ay",
+		template: "%s | Muhammet Ay",
 	},
-	description: "Developer, software manager, and creator.",
+	description: "Developer, Computer Engineer",
 	openGraph: {
-		title: "Nedim Arabacı",
-		description: "Developer, software manager, and creator.",
-		url: "https://ned.im",
-		siteName: "Nedim Arabacı",
+		title: "Muhammet Ay",
+		description: "Developer, Computer Engineer",
+		url: "https://aymuhammet.com.tr",
+		siteName: "Muhammet Ay",
 		locale: "en_US",
 		type: "website",
 	},
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Nedim Arabacı",
+		title: "Muhammet Ay",
 		card: "summary_large_image",
 	},
 	verification: {

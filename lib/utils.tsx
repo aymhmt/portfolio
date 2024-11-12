@@ -1,4 +1,3 @@
-import GiderimLogo from "@/components/blocks/giderim-logo";
 import IconGithub from "@/components/icons/github";
 import { IconWorld } from "@tabler/icons-react";
 import { type ClassValue, clsx } from "clsx";

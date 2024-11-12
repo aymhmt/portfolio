@@ -8,17 +8,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://ned.im"),
+	metadataBase: new URL("https://aymuhammet.com.tr"),
 	title: {
-		default: "Nedim Arabacı",
-		template: "%s | Nedim Arabacı",
+		default: "Muhammet Ay",
+		template: "%s | Muhammet Ay",
 	},
-	description: "Developer, software manager, and creator.",
+	description: "Developer, Computer Engineer",
 	openGraph: {
-		title: "Nedim Arabacı",
-		description: "Developer, software manager, and creator.",
-		url: "https://ned.im",
-		siteName: "Nedim Arabacı",
+		title: "Muhammet Ay",
+		description: "Developer, Computer Engineer",
+		url: "https://aymuhammet.com.tr",
+		siteName: "Muhammet AY",
 		locale: "en_US",
 		type: "website",
 	},
@@ -32,10 +32,6 @@ export const metadata: Metadata = {
 			"max-image-preview": "large",
 			"max-snippet": -1,
 		},
-	},
-	twitter: {
-		title: "Nedim Arabacı",
-		card: "summary_large_image",
 	},
 	verification: {
 
