@@ -169,13 +169,13 @@ export const projects = [
 	},
 
 	{
-		name: "Ai App",
+		name: "Soren",
 		githubSlug: "aymhmt/portfolio",
 		released: "2024-11-11",
-		description: "Ai Application.",
+		description: "Ai News Site.",
 		links: [
 			{
-				href: "https://aymuhammet.com.tr",
+				href: "https://soren.com",
 				label: "Website",
 				icon: IconWorld,
 			},

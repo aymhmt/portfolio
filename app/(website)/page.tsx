@@ -17,7 +17,6 @@ export default async function Readme() {
 		.flatMap((week) => week.contributionDays)
 		.slice(-14);
 
-	const githubFollowers = githubResponse.data.viewer.followers.totalCount;
 	const githubStars = githubResponse.data.viewer.repositories.nodes.reduce(
 		(acc, repo) => acc + repo.stargazerCount,
 		0,
