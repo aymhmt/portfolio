@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function NotFound() {
 	return (
 		<Container className="flex h-full items-center pt-16 sm:pt-32">
+			<meta name="google-adsense-account" content="ca-pub-5886958611063336"></meta>
 			<div className="flex flex-col items-center">
 				<p className="text-base font-mono font-semibold text-indigo-500">404</p>
 				<h1 className="mt-4 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">

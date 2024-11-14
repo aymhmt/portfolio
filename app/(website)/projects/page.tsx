@@ -17,6 +17,7 @@ export default async function Home() {
 
 	return (
 		<Container className="mt-16">
+			<meta name="google-adsense-account" content="ca-pub-5886958611063336"></meta>
 			<div className="max-w-2xl">
 				<h1 className="tracking-tight text-5xl">Projects</h1>
 				<div className="pro text-muted-foreground text-balance">

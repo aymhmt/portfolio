@@ -25,6 +25,7 @@ export default async function Readme() {
 	return (
 		<>
 			<Container className="mt-9">
+			<meta name="google-adsense-account" content="ca-pub-5886958611063336"></meta>
 				<h1 className="tracking-tight text-4xl sm:text-5xl">
 					Muhammet Ay
 					<span className="text-muted-foreground font-title font-extralight text-3xl sm:text-4xl block text-balance">
