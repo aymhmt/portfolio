@@ -213,7 +213,7 @@ export const certificate = [
 		title: "BTK Akademi A2 English",
 		description: "I have completed the A2 level course, built a strong foundation in English, and earned the right to receive this certificate",
 		recipientName: "Muhammet Ay",
-		filePath: "https://drive.google.com/file/d/1iR-vzU0Gz-xQkd1E6WV07d7j8VOtEi9W/view?usp=sharing",
+		filePath: "https://drive.google.com/file/d/1M_sFbLpMSQTDkv1emoLgw4J4COQs2hR1/view?usp=sharing",
 		metrics: [],
 		featured: true,
 	},
