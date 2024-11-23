@@ -148,39 +148,13 @@ export const projects = [
 	},
 
 	{
-		name: "Match App",
-		githubSlug: "aymhmt/portfolio",
-		released: "2024-11-11",
-		description: "Match application.",
-		links: [
-			{
-				href: "https://aymuhammet.com.tr",
-				label: "Website",
-				icon: IconWorld,
-			},
-			{
-				href: "https://github.com/aymhmt/portfolio",
-				label: "GitHub",
-				icon: IconGithub,
-			},
-		],
-		metrics: [],
-		featured: true,
-	},
-
-	{
 		name: "Soren",
-		githubSlug: "aymhmt/portfolio",
-		released: "2024-11-11",
-		description: "Ai News Site.",
+		githubSlug: "aymhmt/Soren",
+		released: "2024-11-23",
+		description: "Login Page.",
 		links: [
 			{
-				href: "https://soren.com",
-				label: "Website",
-				icon: IconWorld,
-			},
-			{
-				href: "https://github.com/aymhmt/portfolio",
+				href: "https://github.com/aymhmt/Soren",
 				label: "GitHub",
 				icon: IconGithub,
 			},
