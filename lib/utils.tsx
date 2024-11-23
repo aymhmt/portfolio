@@ -162,6 +162,22 @@ export const projects = [
 		metrics: [],
 		featured: true,
 	},
+
+	{
+		name: "FlashCard",
+		githubSlug: "aymhmt/FlashCard",
+		released: "2024-11-23",
+		description: "English flash card app.",
+		links: [
+			{
+				href: "https://github.com/aymhmt/FlashCard",
+				label: "GitHub",
+				icon: IconGithub,
+			},
+		],
+		metrics: [],
+		featured: true,
+	},
 ];
 
 export const certificate = [
